@@ -6,7 +6,6 @@ import '../../assets/css/fonts.css';
 const fifthColor = '#151524';
 
 export const Container = styled.div`
-height: 100vh;
 display: grid;
 grid-template-columns: 1fr 1fr;
 background-color: ${fifthColor};
@@ -16,10 +15,10 @@ background-color: ${fifthColor};
 export const ErrorText = styled.p`
 font-family: 'Courier Prime', monospace;
 background-color: ${fifthColor};
-color:#A9242C;
+color:'#A9242C';
 margin: auto;
 font-weight: 700;
-font-size: 25px;
+font-size: 1.563rem;
 `;
 
 export const Gif = styled.div`

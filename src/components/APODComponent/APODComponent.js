@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Article, Item, Paragraph, CardTitle, Row} from './style'
+import { Article, Item, Paragraph, CardTitle, Row, Image } from './style'
 
 const APODComponent = (props) => {
 
@@ -12,7 +12,7 @@ const APODComponent = (props) => {
                     <Article>
                         <CardTitle>{data.title}</CardTitle>
                         <Row>
-                            <Paragraph><img src={data.url} alt={data.title}></img></Paragraph>
+                            <Image img={data.url} alt={data.title} />
                             <Paragraph description>{data.explanation}</Paragraph>
                         </Row>
                     </Article>

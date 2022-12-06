@@ -13,7 +13,6 @@ color: ${primaryColor}
 export const Content = styled.div`
 position: relative;
 font-family: 'Courier Prime', monospace;
-min-height: 100vh;
 `;
 
 
@@ -24,6 +23,7 @@ margin: 3rem;
 
 export const Title = styled.h3`
 font-size: ${props => props.subtitle ? '2rem' : '4rem'};
+margin-bottom: 1rem;
 font-weight: 100;
 margin-top: 0;
 color:${secondaryColor}

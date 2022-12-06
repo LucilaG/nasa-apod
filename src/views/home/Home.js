@@ -5,13 +5,12 @@ import { Header, Title, Body, Content } from './style'
 import Loading from '../../components/loading/Loading'
 import Error from '../../components/error/Error';
 
-const URL = 'https://api.nasa.gov/planetary/apod'
 const URL_PARAMS = '?api_key=aFTcAdnON8NotVOegGndAMcsUKn1t9a1bieDPAmO'
 
 const Home = () => {
 
     const { data, error, loading } = useGet({
-        path: URL.concat(URL_PARAMS)
+        path: process.env.REACT_APP_BASE_URL.concat(URL_PARAMS)
     });
 
     return (
